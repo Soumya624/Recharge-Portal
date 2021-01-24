@@ -13,7 +13,9 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
+import SignupComponent from './SignupComponent';
+import HomeComponent from './HomeComponent';
+import LoginComponent from './LoginComponent';
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,12 +23,22 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Recharge Portal</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="./Home">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="./Signup">Signup</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="./Login">Login</NavLink>
+            </NavItem>
           </Nav>
+
         </Collapse>
       </Navbar>
     </div>
