@@ -9,7 +9,9 @@ const Example = (props) => {
   return (
     <Row style={{padding: "6%"}}>
         <Col>
-            <img src="./no-code.png"  width="70%"/>
+            <img src="./a1.png"/>
+            <br/>
+            <p style={{color:"white"}}>Hello World</p>
         </Col>
         <Col>
         <Card body outline color="primary">
@@ -55,7 +57,7 @@ const Example = (props) => {
             </Col>
           </Row>
           <br/>
-          <Button>Sign Up</Button>
+          <Button outline color="primary">Sign Up</Button>
         </Form>
         </Card>
         </Col>

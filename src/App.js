@@ -13,7 +13,7 @@ function App() {
       
       <Router>
       <HeaderComponent/>
-      <Route path="/">
+      <Route path="">
           <HomeComponent/>
       </Route>
       <Route path="/Login">
